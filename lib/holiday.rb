@@ -74,7 +74,7 @@ def all_holidays_with_bbq(holiday_hash)
   holiday_hash.collect do |season, season_holiday_hash|
       season_holiday_hash.collect do |holiday, supply_array|
       supply_array.include?("BBQ") ? holiday : nil 
-        new_array << season.key("BBQ")
+    end
       end
   
   end
